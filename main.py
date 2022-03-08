@@ -14,7 +14,8 @@ import yaml
 import logging
 from yaml.loader import SafeLoader
 logging.basicConfig(filename="output.log",
-                    format='%(asctime)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S',
+                    format='%(asctime)s.0000; %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
                     filemode='w')
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
